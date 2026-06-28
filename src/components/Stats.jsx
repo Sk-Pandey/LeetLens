@@ -14,21 +14,21 @@ const Stats = ({ search }) => {
   }, [search]);
 
   return (
-  <>
-    {stats.totalSolved !== undefined && (
-      <>
-        <div>{`${stats.totalSolved}/${stats.totalQuestions}`}</div>
+    <>
+      {stats.totalSolved !== undefined && (
+        <>
+          <div>{`${stats.totalSolved}/${stats.totalQuestions}`}</div>
 
-        <div>
-          <h1>Difficulty breakdown</h1>
-          <div>{`${stats.easySolved}/${stats.totalEasy}`}</div>
-          <div>{`${stats.mediumSolved}/${stats.totalMedium}`}</div>
-          <div>{`${stats.hardSolved}/${stats.totalHard}`}</div>
-        </div>
-      </>
-    )}
-  </>
-);
+          <div>
+            <h1>Difficulty breakdown</h1>
+            <div>{`${stats.easySolved}/${stats.totalEasy}`}</div>
+            <div>{`${stats.mediumSolved}/${stats.totalMedium}`}</div>
+            <div>{`${stats.hardSolved}/${stats.totalHard}`}</div>
+          </div>
+        </>
+      )}
+    </>
+  );
 };
 
 export default Stats;

@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Search from "./components/Search";
 import Profile from "./components/Profile";
 import Stats from "./components/Stats";
+import Badges from "./components/Badges";
 const App = () => {
   const [search, setSearch] = useState("");
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Search search={search} setSearch={setSearch} />
       <Profile search={search} />
       <Stats search={search} />
+      <Badges search={search} />
     </div>
   );
 };
