@@ -1,5 +1,5 @@
 import React from "react";
-
+import Monthbadge from "../assets/Monthbadge.png";
 const Badges = ({ badge, loading }) => {
   if (loading) {
     return (
@@ -39,9 +39,7 @@ const Badges = ({ badge, loading }) => {
           >
             <img
               className="h-14 w-14 object-contain transform group-hover:scale-110 transition-transform duration-300"
-              src={
-                item.icon?.startsWith("https") ? item.icon : "/Monthbadge.png"
-              }
+              src={item.icon?.startsWith("https") ? item.icon : Monthbadge}
               alt={item.displayName || "Badge Item"}
             />
             <div className="absolute -top-8 bg-slate-900 border border-slate-700 text-[10px] px-2 py-0.5 rounded text-slate-200 whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
