@@ -20,7 +20,15 @@ const Search = ({ search, setSearch }) => {
             <path d="m21 21-4.3-4.3"></path>
           </g>
         </svg>
-        <input type="search" required placeholder="Search" value={search} />
+        <input
+          type="search"
+          required
+          placeholder="Search"
+          value={search}
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+        />
       </label>
     </div>
   );
