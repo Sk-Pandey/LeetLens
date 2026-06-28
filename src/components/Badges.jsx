@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Badges = ({ search, badge }) => {
+const Badges = ({ badge }) => {
   return (
     <>
       {badge.badgesCount > 0 && (

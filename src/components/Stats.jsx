@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Stats = ({ search, stats }) => {
+const Stats = ({ stats }) => {
   return (
     <>
       {stats.totalSolved !== undefined && (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Profile = ({ search, profile }) => {
+const Profile = ({ profile }) => {
   return (
     <div>
       <img src={profile.avatar} className="rounded-full" alt="" />
