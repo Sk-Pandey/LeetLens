@@ -1,22 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const Stats = () => {
+const Stats = ({ search }) => {
+  const [stats, setStats] = useState({});
+  useEffect(() => {
+    const apiCall = async () => {
+      const fetchData = await fetch(
+        `https://alfa-leetcode-api.onrender.com/${search}/profile`,
+      );
+      const data = await fetchData.json();
+      setStats(data);
+    };
+    apiCall();
+  }, [search]);
+
   return (
-    <>
-      <div>
-        circular completion bar which show how many question has beens solved
-        out od this much
-      </div>
-      <div>
-        <h1>Difficulty breakdown</h1>
-        <div>progress bar for easy question solves no out of total number</div>
+  <>
+    {stats.totalSolved !== undefined && (
+      <>
+        <div>{`${stats.totalSolved}/${stats.totalQuestions}`}</div>
+
         <div>
-          progress bar for medium question solves no out of total number
+          <h1>Difficulty breakdown</h1>
+          <div>{`${stats.easySolved}/${stats.totalEasy}`}</div>
+          <div>{`${stats.mediumSolved}/${stats.totalMedium}`}</div>
+          <div>{`${stats.hardSolved}/${stats.totalHard}`}</div>
         </div>
-        <div>progress bar for hard question solves no out of total number</div>
-      </div>
-    </>
-  );
+      </>
+    )}
+  </>
+);
 };
 
 export default Stats;
