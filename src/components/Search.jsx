@@ -1,6 +1,6 @@
 import React from "react";
 
-const Search = () => {
+const Search = ({ search, setSearch }) => {
   return (
     <div>
       <label className="input">
@@ -20,7 +20,7 @@ const Search = () => {
             <path d="m21 21-4.3-4.3"></path>
           </g>
         </svg>
-        <input type="search" required placeholder="Search" />
+        <input type="search" required placeholder="Search" value={search} />
       </label>
     </div>
   );
