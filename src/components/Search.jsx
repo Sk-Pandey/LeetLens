@@ -29,6 +29,11 @@ const Search = ({ search, setSearch, handleApi }) => {
             onChange={(e) => {
               setSearch(e.target.value);
             }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleApi();
+              }
+            }}
           />
         </label>
       </div>
