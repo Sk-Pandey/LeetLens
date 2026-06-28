@@ -1,18 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Stats = ({ search }) => {
-  const [stats, setStats] = useState({});
-  useEffect(() => {
-    const apiCall = async () => {
-      const fetchData = await fetch(
-        `https://alfa-leetcode-api.onrender.com/${search}/profile`,
-      );
-      const data = await fetchData.json();
-      setStats(data);
-    };
-    apiCall();
-  }, [search]);
-
+const Stats = ({ search, stats }) => {
   return (
     <>
       {stats.totalSolved !== undefined && (

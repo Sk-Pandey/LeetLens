@@ -1,18 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Profile = ({ search }) => {
-  const [profile, setProfile] = useState({});
-  useEffect(() => {
-    const apiCall = async () => {
-      const fetchData = await fetch(
-        `https://alfa-leetcode-api.onrender.com/${search}`,
-      );
-      const data = await fetchData.json();
-      setProfile(data);
-    };
-    apiCall();
-  }, [search]);
-
+const Profile = ({ search, profile }) => {
   return (
     <div>
       <img src={profile.avatar} className="rounded-full" alt="" />

@@ -1,18 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Badges = ({ search }) => {
-  const [badge, setBadge] = useState({ badgesCount: 0, badges: [] });
-  useEffect(() => {
-    const apiCall = async () => {
-      const fetchData = await fetch(
-        `https://alfa-leetcode-api.onrender.com/${search}/badges`,
-      );
-      const data = await fetchData.json();
-      setBadge(data);
-    };
-    apiCall();
-  }, [search]);
-
+const Badges = ({ search, badge }) => {
   return (
     <>
       {badge.badgesCount > 0 && (
@@ -23,6 +11,7 @@ const Badges = ({ search }) => {
             {badge.badges.map((item) => {
               return (
                 <img
+                  className="h-12"
                   key={item.id}
                   src={
                     item.icon.startsWith("https")
