@@ -30,10 +30,10 @@ const App = () => {
 
     try {
       const [profileRes, statsRes, badgesRes, contestRes] = await Promise.all([
-        fetch(`https://alfa-leetcode-api.onrender.com/${search}`),
-        fetch(`https://alfa-leetcode-api.onrender.com/${search}/profile`),
-        fetch(`https://alfa-leetcode-api.onrender.com/${search}/badges`),
-        fetch(`https://alfa-leetcode-api.onrender.com/${search}/contest`),
+        fetch(`https://leetlensapi.onrender.com/${search}`),
+        fetch(`https://leetlensapi.onrender.com/${search}/profile`),
+        fetch(`https://leetlensapi.onrender.com/${search}/badges`),
+        fetch(`https://leetlensapi.onrender.com/${search}/contest`),
       ]);
 
       // 1. Technical/Logical Check: Validate if the server returned any errors
