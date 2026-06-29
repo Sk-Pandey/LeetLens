@@ -16,7 +16,7 @@ const Navbar = () => {
         </h1>
       </div>
       <a
-        href="https://shashikant-snowy.vercel.app/"
+        href="https://shashikantpandey.vercel.app/"
         target="_blank"
         className="hidden sm:block"
       >
