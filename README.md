@@ -29,7 +29,6 @@ Explore the live build right here: **[LeetLens Live Production](https://sk-pande
 - **Frontend Core Library:** React.js (Hooks & Stateful Architecture)
 - **Styling Architecture:** Tailwind CSS (Modern Utility Typography & Responsive Flexible Canvas grids)
 - **Icon Assets:** Material UI (`@mui/icons-material`)
-- **API Engine Infrastructure:** Remote Proxy [Alfa-LeetCode-API](https://alfa-leetcode-api.onrender.com)
 - **Data Rendering:** Natively computed Math/SVG Vector Curves (zero bloated graph package dependencies)
 
 ---
