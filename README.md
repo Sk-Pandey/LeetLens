@@ -1,6 +1,6 @@
 # 👁️ LeetLens
 
-> **Engineering Your Coding Legacy.** A premium, ultra-modern, and hyper-responsive dashboard application designed for tracking and breaking down your LeetCode journey, problem-solving metrics, and competitive contest ratings in real time.
+> **Engineering Your Coding Legacy.** A premium, ultra-modern, and hyper-responsive dashboard application designed for tracking and breaking down your LeetCode journey, problem-solving metrics, and competitive contest ratings in real time. 
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-amber500?style=for-the-badge&logo=vercel)](https://sk-pandey.github.io/LeetLens/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/Sk-Pandey/LeetLens)
