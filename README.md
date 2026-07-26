@@ -10,7 +10,7 @@
 ## 🚀 Live Application URL
  
 Explore the live build right here: **[LeetLens Live Production](https://sk-pandey.github.io/LeetLens/)**
- 
+  
 ---
  
 ## ✨ Features
