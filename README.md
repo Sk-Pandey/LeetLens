@@ -6,7 +6,6 @@
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/Sk-Pandey/LeetLens)
  
 --- 
-  
 ## 🚀 Live Application URL
  
 Explore the live build right here: **[LeetLens Live Production](https://sk-pandey.github.io/LeetLens/)**
