@@ -44,7 +44,7 @@ During the development and refactoring stages of **LeetLens**, several non-trivi
    Instead of using heavy charting frameworks that slow down initialization, custom responsive vector paths were designed using native HTML/SVG scaling math. This drastically reduced the app bundle size while rendering charts at a fluid 60 FPS.
 4. **Data Isolation Shielding:**
    Prevented UI layout distortion by building a defensive conditional layer `(loading || profile) && (...)` that isolates elements until a search is initiated.
-
+       
 ---
 
 ## 📦 Local Project Installation
