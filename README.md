@@ -13,7 +13,7 @@ Explore the live build right here: **[LeetLens Live Production](https://sk-pande
 ---
                   
 ## ✨ Features 
-         
+                                
 - **Instant Username Breakdown:** Seamlessly fetches data profiles directly from LeetCode endpoints without requiring third-party authentication overhead.
 - **Neo-Glow Area Charts:** Custom interactive SVG contest timeline engine. Hovering your cursor over line path breakpoints dynamically uncovers explicit contest IDs and rating updates with real-time tooling responses.
 - **Micro-Metric Progress Circles:** Custom square-aspect HTML/SVG math circles engineered to visually represent exact solved/total distributions down to the pixel.
