@@ -1,4 +1,4 @@
-# 👁️ LeetLens
+# 👁️ LeetLens               
 
 > **Engineering Your Coding Legacy.** A premium, ultra-modern, and hyper-responsive dashboard application designed for tracking and breaking down your LeetCode journey, problem-solving metrics, and competitive contest ratings in real time. 
                                                         
